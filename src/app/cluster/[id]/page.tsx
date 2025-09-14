@@ -3,6 +3,7 @@ import Table from "@/app/_components/table/Table";
 import TableBody from "@/app/_components/table/TableBody";
 import TableCell from "@/app/_components/table/TableCell";
 import TableRow from "@/app/_components/table/TableRow";
+import Tag, { TagColour } from "@/app/_components/Tag";
 
 interface ClusterDetailParams {
   params: {
@@ -49,7 +50,7 @@ export default async function ClusterDetailPage({
         <TableBody>
           <TableRow>
             <TableCell>2025-08-30 11:28:55.803452</TableCell>
-            <TableCell>NEEDS_ATTENTION</TableCell>
+            <TableCell><Tag colour={TagColour.RED}>NEEDS ATTENTION</Tag></TableCell>
             <TableCell>COMMON_PLATFORM</TableCell>
             <TableCell>CPR_RECORD_UPDATED</TableCell>
             <TableCell>63778937-a4bc-4ce7-bd33-1f0d5067598c</TableCell>
